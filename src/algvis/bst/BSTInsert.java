@@ -74,5 +74,6 @@ public class BSTInsert extends Algorithm {
 		setText("done");
 		v.bgColor(Colors.NORMAL);
 		T.v = null;
+//		T.reposition();
 	}
 }

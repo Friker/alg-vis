@@ -4,6 +4,7 @@ import java.awt.Graphics;
 
 import algvis.bst.BSTNode;
 import algvis.core.DataStructure;
+import algvis.core.ExtremeNodePair;
 import algvis.core.Node;
 import algvis.core.View;
 
@@ -89,8 +90,9 @@ public class AANode extends BSTNode {
 	}
 
 	@Override
-	public void reposition() {
+	public ExtremeNodePair reposition() {
 		reboxTree();
 		repos();
+		return new ExtremeNodePair();
 	}
 }
