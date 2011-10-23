@@ -185,8 +185,8 @@ public class RBNode extends BSTNode {
 		if (key != NULL) {
 			reboxTree();
 			repos();
-//			ExtremeNodePair EP = setup(this, 0);
-//			petrify(this, 0);
+//			setup(0);
+//			petrify(0);
 			return new ExtremeNodePair();
 		}
 		return new ExtremeNodePair();
