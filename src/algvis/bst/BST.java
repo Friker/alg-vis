@@ -3,7 +3,6 @@ package algvis.bst;
 import java.awt.Graphics;
 
 import algvis.core.Dictionary;
-import algvis.core.ExtremeNodePair;
 import algvis.core.StringUtils;
 import algvis.core.View;
 import algvis.core.VisPanel;
@@ -141,19 +140,10 @@ public class BST extends Dictionary {
 	 */
 	public void reposition() {
 		if (root != null) {
-			ExtremeNodePair EP = root.reposition();
+			root.reposition();
 			
-			/*
-			 * toto je najblizsie to do
-			 */
-			/*
-			x1 = root.x;
-			x2 = yspan*5*(EP.left.level > EP.right.level ? EP.left.level : EP.right.level);
-			y1 = -EP.left.addr.tox;
-			y2 = EP.right.addr.tox;
-			 */
 			M.S.V.setBounds(x1, y1, x2, y2);
-			System.out.println(x1+" "+y1+" "+x2+" "+y2);
+//			System.out.println(x1+" "+y1+" "+x2+" "+y2);
 		}
 	}
 }

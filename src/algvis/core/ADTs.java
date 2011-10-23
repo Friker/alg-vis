@@ -1,20 +1,18 @@
 package algvis.core;
 
 /**
- * The Class ADTs.
- * This class contains the list of all abstract data types (ADTs).
- * The menus with data structures are populated from this list.
- * Each ADT should have field adtName with its name (key to resource bundle).
+ * The Class ADTs. This class contains the list of all abstract data types
+ * (ADTs). The menus with data structures are populated from this list. Each ADT
+ * should have field adtName with its name (key to resource bundle).
  */
 public class ADTs {
 	/**
 	 * The list of all abstract data types.
 	 */
-	@SuppressWarnings("unchecked")
-	static final Class[] ADT = {
-		Dictionary.class,    // insert, find, delete
-		PriorityQueue.class, // insert, decrease-key, delete-min
-		MeldablePQ.class     // insert, decrease-key, delete-min, meld
+	@SuppressWarnings("rawtypes")
+	static final Class[] ADT = { Dictionary.class, // insert, find, delete
+			PriorityQueue.class, // insert, decrease-key, delete-min
+			MeldablePQ.class // insert, decrease-key, delete-min, meld
 	};
 	static final int N = ADT.length;
 
